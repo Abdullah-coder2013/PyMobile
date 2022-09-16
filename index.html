@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Brython">
+	<meta name="author" content="Pierre Quentel">
+	<meta name="keywords" content="Python, Brython">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>PyMobile</title>
+	<noscript>Please enable Javascript to view this page correctly.</noscript>
+
+	<link rel="stylesheet" href="./src/brython.css">
+
+	<script src="./src/brython.js.download"></script>
+	<script src="./src/brython_stdlib.js.download"></script>
+
+	<style>
+		.codearea {
+			background-color: #000;
+			color: #fff;
+			font-family: monospace;
+			font-size: 14px;
+			overflow: auto
+		}
+	</style>
+</head>
+
+
+<body onload="brython(1); console.warn('This page is powered by Brython!')" style="background-color: black;">
+	<table id="banner" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr id="banner_row"></tr>
+		</tbody>
+	</table>
+	<pre id="logo" style="color: white;">
+ _____       __  __       _     _ _      
+|  __ \     |  \/  |     | |   (_) |     
+| |__) |   _| \  / | ___ | |__  _| | ___ 
+|  ___/ | | | |\/| |/ _ \| '_ \| | |/ _ \
+| |   | |_| | |  | | (_) | |_) | | |  __/
+|_|    \__, |_|  |_|\___/|_.__/|_|_|\___|
+        __/ |                            
+        |___/      </pre>
+
+	<textarea id="code" class="codearea" rows="44" cols="230">Console from Brython</textarea>
+
+	<div id="content"></div>
+
+	<script type="text/python3">
+  from interpreter import Interpreter
+
+  # open REPL in textarea with id "code"
+  Interpreter("code")
+  </script>
+
+
+
+
+	<style id="brython-interpreter">
+		.brython-interpreter {
+			background-color: #000;
+			color: #fff;
+			font-family: monospace;
+		}
+	</style>
+</body>
+
+</html>
